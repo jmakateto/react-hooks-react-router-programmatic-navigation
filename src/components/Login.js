@@ -8,6 +8,7 @@ function Login({ setIsLoggedIn }) {
     password: "",
   });
 
+  
   function handleChange(e) {
     setFormData({
       ...formData,
@@ -15,12 +16,13 @@ function Login({ setIsLoggedIn }) {
     });
   }
 
+  // Handle  submission (login)
   function handleSubmit(e) {
     e.preventDefault();
 
     setIsLoggedIn(true);
 
-    // after logging the user in, redirect to the home page!
+    // after logging the user  redirect to the home page
     history.push("/");
   }
 

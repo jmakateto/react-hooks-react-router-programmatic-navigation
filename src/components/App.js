@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
@@ -10,7 +11,10 @@ function App() {
 
   return (
     <div>
+      
       <Navbar setIsLoggedIn={setIsLoggedIn} />
+
+      
       <Switch>
         <Route exact path="/about">
           <About />
